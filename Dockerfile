@@ -9,8 +9,9 @@ RUN sudo yum update
 RUN dnf install gcc
 RUN yes | dnf install python2
 # RUN dnf install numactl-devel
-RUN dnf install ftp://ftp.pbone.net/mirror/ftp.redhat.com/pub/redhat/rhel/rhel-8-beta/baseos/x86_64/Packages/pam-devel-1.3.1-3.el8.x86_64.rpm
-RUN dnf install pam-devel
+#RUN dnf install ftp://ftp.pbone.net/mirror/ftp.redhat.com/pub/redhat/rhel/rhel-8-beta/baseos/x86_64/Packages/pam-devel-1.3.1-3.el8.x86_64.rpm
+#RUN dnf install pam-devel
+RUN sudo yum install numactl-libs
 # RUN dnf install https://download.opensuse.org/ports/ppc/source/tumbleweed/repo/oss/src/numactl-2.0.14-4.2.src.rpm
 # RUN dnf install numactl-devel
 # RUN yes | sudo yum install unixODBC unixODBC-devel 
