@@ -9,6 +9,7 @@ RUN sudo yum update
 RUN dnf install gcc
 RUN yes | dnf install python2
 # RUN dnf install numactl-devel
+RUN dnf install https://download.opensuse.org/ports/ppc/source/tumbleweed/repo/oss/src/numactl-2.0.14-4.2.src.rpm
 RUN dnf install numactl-devel
 # RUN yes | sudo yum install unixODBC unixODBC-devel 
 # RUN sudo yum install devtoolset-8
